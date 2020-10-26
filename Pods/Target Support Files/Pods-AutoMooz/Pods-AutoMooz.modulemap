@@ -1,0 +1,6 @@
+module Pods_AutoMooz {
+  umbrella header "Pods-AutoMooz-umbrella.h"
+
+  export *
+  module * { export * }
+}
