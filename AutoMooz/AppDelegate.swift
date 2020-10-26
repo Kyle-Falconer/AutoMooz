@@ -19,6 +19,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var calendarHelper : CalendarHelper?
     let sleepDurationSeconds : TimeInterval = 30  // one minute
     let promptInAdvanceSeconds : TimeInterval = 45  // one minute, TODO: make this configurable
+    var currentZoomEvent: ZoomEvent?
     
     lazy var preferencesWindowController = PreferencesWindowController(
             preferencePanes: [
@@ -29,7 +30,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        
         let popoverView = PopoverView()
         
         popover.contentSize = NSSize(width:360, height:360)
@@ -51,41 +51,50 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             calendarHelper = CalendarHelper.init()
         }
         calendarHelper?.fetchEventsFromCalendar()
-        let nextZoomEvent = calendarHelper?.getNextZoomEvent()
-        if nil == nextZoomEvent || nil == nextZoomEvent?.startDate {
+        self.currentZoomEvent = calendarHelper?.getNextZoomEvent()
+        if nil == self.currentZoomEvent || nil == self.currentZoomEvent?.startDate {
             print("no zoom event coming up")
             return
         }
         let nowDate: Date = Date()
-        let eventDate: Date = nextZoomEvent!.startDate
+        let eventDate: Date = self.currentZoomEvent!.startDate
         let secondsRemainingToNextEvent: TimeInterval = eventDate.timeIntervalSince(nowDate)
-        let formatter = DateFormatter()
-        formatter.dateFormat = "h:mm a, MM/dd/yyyy "
-        let eventDateString :String = formatter.string(from: eventDate)
-        print(String(format: "next event happens at: %@, which is %.1f minutes away", eventDateString, secondsRemainingToNextEvent/60))
+        
+        
+        print(String(format: "next event happens at: %@, which is %.1f minutes away", self.currentZoomEvent!.getHumanDateTime(), secondsRemainingToNextEvent/60))
         if (secondsRemainingToNextEvent > 0 && secondsRemainingToNextEvent < promptInAdvanceSeconds) {
-            calendarHelper?.markEventAsShown(event: nextZoomEvent)
+            calendarHelper?.markEventAsShown(event: self.currentZoomEvent)
             openJoinMeetingWindow()
         }
     }
     
     @objc func openJoinMeetingWindow() {
-        print("opening the join meeting prompt")
-        if nil == joinMeetingWindow {
-            let contentView = ContentView().environment(\.managedObjectContext, persistentContainer.viewContext)
-    //
-    //         Create the window and set the content view.
-            joinMeetingWindow = NSWindow(
-                contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
-                styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
-                backing: .buffered, defer: false)
-            joinMeetingWindow.center()
-            joinMeetingWindow.setFrameAutosaveName("Main Window")
-            joinMeetingWindow.contentView = NSHostingView(rootView: contentView)
+        if nil == self.currentZoomEvent {
+            print("the zoom event is null!")
+            return
         }
+        
+        print("opening the join meeting prompt")
+        let contentView = ContentView(zoomEvent: self.currentZoomEvent!).environment(\.managedObjectContext, persistentContainer.viewContext)
+
+//         Create the window and set the content view.
+        joinMeetingWindow = NSWindow(
+            contentRect: NSRect(x: 0, y: 0, width: 800, height: 600),
+            styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
+            backing: .buffered, defer: false)
+        joinMeetingWindow.center()
+        joinMeetingWindow.setFrameAutosaveName("Main Window")
+        joinMeetingWindow.contentView = NSHostingView(rootView: contentView)
+        
         joinMeetingWindow.makeKeyAndOrderFront(nil)
-//        joinMeetingWindow.orderFrontRegardless()
         NSApp.activate(ignoringOtherApps: true)
+        SfxHelper.moo()
+        
+        Timer.scheduledTimer(timeInterval: 2, target: self, selector:#selector(announceEvent), userInfo: nil, repeats: false)
+    }
+    
+    @objc func announceEvent() {
+        TtsHelper.announce(text: "your meeting is ready for \(self.currentZoomEvent!.title)")
     }
     
     @objc func openPreferencesWindow() {

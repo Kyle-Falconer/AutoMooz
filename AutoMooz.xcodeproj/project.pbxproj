@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		925B8AB1254693350029D194 /* ZoomEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925B8AB0254693350029D194 /* ZoomEvent.swift */; };
+		925B8AB925469FAE0029D194 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925B8AB825469FAE0029D194 /* Extensions.swift */; };
+		925B8ABE2546A4ED0029D194 /* TtsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925B8ABD2546A4ED0029D194 /* TtsHelper.swift */; };
+		925B8ACB2546A6F10029D194 /* SfxHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925B8ACA2546A6F10029D194 /* SfxHelper.swift */; };
+		925B8AD02546A7560029D194 /* Single_Cow-SoundBible.com-2051754137.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 925B8ACF2546A7560029D194 /* Single_Cow-SoundBible.com-2051754137.mp3 */; };
 		92AF534C25447C10007A0E06 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF534B25447C10007A0E06 /* StatusBarController.swift */; };
 		92AF5359254481A0007A0E06 /* menubar_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AF5358254481A0007A0E06 /* menubar_icon.png */; };
 		92AF5361254483E8007A0E06 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF5360254483E8007A0E06 /* PopoverView.swift */; };
@@ -49,6 +54,11 @@
 		14C657B66C83774DC021F670 /* Pods-AutoZoom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoZoom.release.xcconfig"; path = "Target Support Files/Pods-AutoZoom/Pods-AutoZoom.release.xcconfig"; sourceTree = "<group>"; };
 		6C82FC2D82ECDA16A764B450 /* Pods-AutoMooz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoMooz.debug.xcconfig"; path = "Target Support Files/Pods-AutoMooz/Pods-AutoMooz.debug.xcconfig"; sourceTree = "<group>"; };
 		8FA033FF91856CA4D20C7567 /* libPods-AutoMooz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutoMooz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		925B8AB0254693350029D194 /* ZoomEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomEvent.swift; sourceTree = "<group>"; };
+		925B8AB825469FAE0029D194 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		925B8ABD2546A4ED0029D194 /* TtsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TtsHelper.swift; sourceTree = "<group>"; };
+		925B8ACA2546A6F10029D194 /* SfxHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SfxHelper.swift; sourceTree = "<group>"; };
+		925B8ACF2546A7560029D194 /* Single_Cow-SoundBible.com-2051754137.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Single_Cow-SoundBible.com-2051754137.mp3"; sourceTree = "<group>"; };
 		92AF534B25447C10007A0E06 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 		92AF5358254481A0007A0E06 /* menubar_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menubar_icon.png; path = ../../../autozoom/button_images/menubar_icon.png; sourceTree = "<group>"; };
 		92AF5360254483E8007A0E06 /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
@@ -147,8 +157,13 @@
 				92AF534B25447C10007A0E06 /* StatusBarController.swift */,
 				92AF5368254485B5007A0E06 /* EventMonitor.swift */,
 				92E33A7D2544A03900C893B6 /* CalendarHelper.swift */,
+				925B8AB0254693350029D194 /* ZoomEvent.swift */,
+				925B8AB825469FAE0029D194 /* Extensions.swift */,
+				925B8ABD2546A4ED0029D194 /* TtsHelper.swift */,
+				925B8ACA2546A6F10029D194 /* SfxHelper.swift */,
 				92D0C2C02544666300D84858 /* Assets.xcassets */,
 				92D0C2C52544666300D84858 /* Main.storyboard */,
+				925B8ACF2546A7560029D194 /* Single_Cow-SoundBible.com-2051754137.mp3 */,
 				92AF5358254481A0007A0E06 /* menubar_icon.png */,
 				92D0C2C82544666300D84858 /* Info.plist */,
 				92D0C2C92544666300D84858 /* AutoMooz.entitlements */,
@@ -305,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92AF5359254481A0007A0E06 /* menubar_icon.png in Resources */,
+				925B8AD02546A7560029D194 /* Single_Cow-SoundBible.com-2051754137.mp3 in Resources */,
 				92D0C2C72544666300D84858 /* Main.storyboard in Resources */,
 				92D0C2C42544666300D84858 /* Preview Assets.xcassets in Resources */,
 				92D0C2C12544666300D84858 /* Assets.xcassets in Resources */,
@@ -358,12 +374,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				92E33AA9254635A100C893B6 /* GeneralPreferenceViewController.swift in Sources */,
+				925B8ABE2546A4ED0029D194 /* TtsHelper.swift in Sources */,
+				925B8AB1254693350029D194 /* ZoomEvent.swift in Sources */,
 				92D0C2BF2544666100D84858 /* AutoMooz.xcdatamodeld in Sources */,
+				925B8ACB2546A6F10029D194 /* SfxHelper.swift in Sources */,
 				92E33A7E2544A03900C893B6 /* CalendarHelper.swift in Sources */,
 				92AF534C25447C10007A0E06 /* StatusBarController.swift in Sources */,
 				92E33AAE254635D200C893B6 /* AdvancedPreferenceViewController.swift in Sources */,
 				92E33AA42546357700C893B6 /* PaneIdentifier.swift in Sources */,
 				92D0C2BC2544666100D84858 /* ContentView.swift in Sources */,
+				925B8AB925469FAE0029D194 /* Extensions.swift in Sources */,
 				92AF5369254485B5007A0E06 /* EventMonitor.swift in Sources */,
 				92E33A9A2546330700C893B6 /* PreferencesView.swift in Sources */,
 				92AF5361254483E8007A0E06 /* PopoverView.swift in Sources */,

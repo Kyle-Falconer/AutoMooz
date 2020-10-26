@@ -8,13 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    var zoomEvent: ZoomEvent
+    
     var body: some View {
         GeometryReader { geometry in
             VStack {
                 
                 Text("Your meeting is ready")
-                    .font(.largeTitle)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .font(.system(size: geometry.size.width/20))
+                    .frame(maxWidth: .infinity)
+                    .padding(.bottom, 30)
+                    .padding(.top, 30)
+                Text("\(zoomEvent.title)")
+                    .font(.system(size: geometry.size.width/10))
+                    .frame(maxWidth: .infinity)
+                    .padding(.bottom, 30)
+                Text("\(zoomEvent.getHumanTime())")
+                    .font(.system(size: geometry.size.width/20))
+                    .frame(maxWidth: .infinity)
+                    .padding(.bottom, 30)
+                
                 HStack {
                     Button(action: {
                         print("join button clicked")
@@ -45,6 +58,10 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(zoomEvent: createPreviewZoomEvent())
+    }
+    static func createPreviewZoomEvent() -> ZoomEvent {
+        let endDate: Date = Date().addingTimeInterval(300)
+        return ZoomEvent.init(title: "Movie Night", startDate: Date(), endDate: endDate, originatingCalendarName: "College Events", zoomLink: "https://zoom.us/j/91858408639")
     }
 }

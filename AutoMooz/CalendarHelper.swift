@@ -15,18 +15,18 @@ class CalendarHelper  {
 
     private let eventStore: EKEventStore
     private var calendarNames: [String]
-    private var zoomEvents: [EKEvent]
-    private var shownEvents: [EKEvent]
+    private var zoomEvents: [ZoomEvent]
+    private var shownEvents: [ZoomEvent]
     private static let maxEventsRemembered : Int = 5
     
     init(with eventStore: EKEventStore = EKEventStore()) {
         self.eventStore = eventStore
         self.calendarNames = [String]()
-        self.zoomEvents = [EKEvent]()
-        self.shownEvents = [EKEvent]()
+        self.zoomEvents = [ZoomEvent]()
+        self.shownEvents = [ZoomEvent]()
    }
     
-    func getNextZoomEvent() -> EKEvent? {
+    func getNextZoomEvent() -> ZoomEvent? {
    
         var sortedEvents = self.zoomEvents.sorted(by: { $0.startDate < $1.startDate })
         // remove any we've already shown
@@ -34,8 +34,8 @@ class CalendarHelper  {
         
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        for e : EKEvent in sortedEvents {
-            print("event: \(e.title!), at \(formatter.string(from: e.startDate))")
+        for e : ZoomEvent in sortedEvents {
+            print("event: \(e.title), at \(formatter.string(from: e.startDate))")
         }
         if self.zoomEvents.isEmpty {
             return nil
@@ -54,7 +54,7 @@ class CalendarHelper  {
             self.calendarNames = self.enumerateCalendarNames()
             self.zoomEvents = getNextEvents(calendarNames: self.calendarNames)
             print("found \(self.zoomEvents.count) zoom events")
-            for ze:EKEvent in self.zoomEvents {
+            for ze:ZoomEvent in self.zoomEvents {
                 let eventIdentifier : String = ze.title
                 print(eventIdentifier)
             }
@@ -97,11 +97,11 @@ class CalendarHelper  {
         return calendarList
     }
     
-    func getNextEvents(calendarNames: [String]) -> [EKEvent] {
+    func getNextEvents(calendarNames: [String]) -> [ZoomEvent] {
         let eventStore = EKEventStore()
         let calendars = eventStore.calendars(for: .event)
-        var zoomEvents: [EKEvent] = [EKEvent]()
-        for calendar:EKCalendar in calendars {
+        var zoomEvents: [ZoomEvent] = [ZoomEvent]()
+        for calendar: EKCalendar in calendars {
 
             if calendarNames.contains(calendar.title) {
 
@@ -114,7 +114,7 @@ class CalendarHelper  {
                 let maybeZoomEvents : [EKEvent] = eventStore.events(matching: predicate)
                 for maybeZoomEvent:EKEvent in maybeZoomEvents {
                     if eventContainsZoomLink(event: maybeZoomEvent) {
-                        zoomEvents.append(maybeZoomEvent)
+                        zoomEvents.append(ZoomEvent.init(event: maybeZoomEvent))
                     }
                 }
             }
@@ -122,11 +122,11 @@ class CalendarHelper  {
         return zoomEvents
     }
     
-    func alreadyShown(event: EKEvent) -> Bool {
+    func alreadyShown(event: ZoomEvent) -> Bool {
         return self.shownEvents.contains(event)
     }
     
-    func markEventAsShown(event: EKEvent?) -> Void {
+    func markEventAsShown(event: ZoomEvent?) -> Void {
         if nil == event {
             return
         }
