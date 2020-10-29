@@ -88,6 +88,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 backing: .buffered, defer: false)
             joinMeetingWindow.center()
             joinMeetingWindow.setFrameAutosaveName("Main Window")
+            joinMeetingWindow.isReleasedWhenClosed = false
         }
         joinMeetingWindow.contentView = NSHostingView(rootView: ContentView(zoomEvent: self.currentZoomEvent!))
 
