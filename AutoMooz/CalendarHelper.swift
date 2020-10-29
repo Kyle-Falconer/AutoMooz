@@ -8,10 +8,6 @@
 import EventKit
 
 class CalendarHelper  {
-    //  zoom_id = re.search(r"zoom.us/j/(.*$)", self.event_url).group(1)
-    // zoom_url = f"zoommtg://zoom.us/join?confno={zoom_id}"
-    let zoomLinkRegex = try! NSRegularExpression(pattern: #"zoom.us/j/([^/"]*)"#,
-                                                 options: .caseInsensitive)
 
     private let eventStore: EKEventStore
     private var calendarNames: [String]
@@ -69,7 +65,6 @@ class CalendarHelper  {
         }
     }
 
-
     func requestAccessToCalendar() {
         self.eventStore.requestAccess(to: .event) { (accessGranted, error) in
             if accessGranted {
@@ -84,7 +79,6 @@ class CalendarHelper  {
             }
         }
     }
-
 
     func enumerateCalendarNames() -> [String] {
         print("building list of calendar names")
@@ -114,7 +108,7 @@ class CalendarHelper  {
 //                print("calendar: \(selectedCalendar)")
                 let maybeZoomEvents : [EKEvent] = eventStore.events(matching: predicate)
                 for maybeZoomEvent:EKEvent in maybeZoomEvents {
-                    if eventContainsZoomLink(event: maybeZoomEvent) {
+                    if ZoomEvent.eventContainsZoomLink(event: maybeZoomEvent) {
                         if maybeZoomEvent.startDate > nowDate {
                             zoomEvents.append(ZoomEvent.init(event: maybeZoomEvent))
                         } else {
@@ -141,24 +135,4 @@ class CalendarHelper  {
         self.shownEvents = self.shownEvents.sorted(by: { $0.startDate > $1.startDate })
     }
 
-    func eventContainsZoomLink(event: EKEvent) -> Bool {
-        if !event.hasNotes {
-            return false
-        }
-        let desc : String = event.notes!
-//        print(desc)
-        let matchGroups = desc.groups(for: zoomLinkRegex)
-        if matchGroups.count > 0 {
-            let eventIdentifier : String = event.title
-            let zoomLink = matchGroups[0][0]
-            print("Got match for event: \(eventIdentifier) and zoom link: \(zoomLink)")
-            return true
-        }
-//        if let match = zoomLinkRegex.firstMatch(in:desc, range: NSRange(location: 0, length: desc.utf16.count)) {
-//            let eventIdentifier : String = event.title
-//            print("Got match for event: \(eventIdentifier) and zoom link: \(match)")
-//            return true
-//        }
-        return false
-    }
 }

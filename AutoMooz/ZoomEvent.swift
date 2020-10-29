@@ -74,6 +74,17 @@ class ZoomEvent: Equatable {
         return nil
     }
 
+    public static func eventContainsZoomLink(event: EKEvent) -> Bool {
+        if !event.hasNotes {
+            return false
+        }
+        let desc : String = event.notes!
+        let matchGroups = desc.groups(for: zoomLinkRegex)
+        if matchGroups.count > 0 {
+            return true
+        }
+        return false
+    }
     
     func getHumanTime() -> String {
         let formatter = DateFormatter()
