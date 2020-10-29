@@ -8,7 +8,7 @@
 import EventKit
 import SwiftSoup
 
-class ZoomEvent: Equatable {
+class ZoomEvent: Equatable, Hashable {
 
     private static let zoomLinkRegex = try! NSRegularExpression(pattern: #"zoom.us/j/([^/"]*)"#,
                                                  options: .caseInsensitive)
@@ -96,6 +96,14 @@ class ZoomEvent: Equatable {
         let formatter = DateFormatter()
         formatter.dateFormat = "h:mm a, MM/dd/yyyy "
         return formatter.string(from: self.startDate)
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(title)
+        hasher.combine(startDate)
+        hasher.combine(endDate)
+        hasher.combine(originatingCalendarName)
+        hasher.combine(zoomLink)
     }
     
     static func == (lhs: ZoomEvent, rhs: ZoomEvent) -> Bool {

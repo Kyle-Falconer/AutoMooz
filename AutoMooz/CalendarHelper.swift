@@ -12,32 +12,33 @@ class CalendarHelper  {
     private let eventStore: EKEventStore
     private var calendarNames: [String]
     private var zoomEvents: [ZoomEvent]
-    private var shownEvents: [ZoomEvent]
+    private var shownEvents: [Int]
     private static let maxEventsRemembered : Int = 5
     
     init(with eventStore: EKEventStore = EKEventStore()) {
         self.eventStore = eventStore
         self.calendarNames = [String]()
         self.zoomEvents = [ZoomEvent]()
-        self.shownEvents = [ZoomEvent]()
+        self.shownEvents = [Int]()
    }
     
     func getNextZoomEvent() -> ZoomEvent? {
-   
+        // remove any that are in the past
         var sortedEvents = self.zoomEvents.sorted(by: { $0.startDate < $1.startDate })
         // remove any we've already shown
         sortedEvents = sortedEvents.filter() { !alreadyShown(event: $0) }
         
+        if sortedEvents.isEmpty {
+            return nil
+        }
+        // now sort
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         for e : ZoomEvent in sortedEvents {
             print("event: \(e.title), at \(formatter.string(from: e.startDate))")
         }
-        if self.zoomEvents.isEmpty {
-            return nil
-        }
+        // and return the first in the list, which is the next event by startDate
         return sortedEvents[0]
-//        return self.zoomEvents.sorted(by: { $0.startDate > $1.startDate })[0]
     }
     
     func fetchEventsFromCalendar() -> Void {
@@ -122,7 +123,7 @@ class CalendarHelper  {
     }
     
     func alreadyShown(event: ZoomEvent) -> Bool {
-        return self.shownEvents.contains(event)
+        return self.shownEvents.contains(event.hashValue)
     }
     
     func markEventAsShown(event: ZoomEvent?) -> Void {
@@ -131,8 +132,7 @@ class CalendarHelper  {
         }
         // keep the size of this array small
         self.shownEvents = Array(self.shownEvents.prefix(CalendarHelper.maxEventsRemembered))
-        self.shownEvents.append(event!)
-        self.shownEvents = self.shownEvents.sorted(by: { $0.startDate > $1.startDate })
+        self.shownEvents.append(event!.hashValue)
     }
 
 }
