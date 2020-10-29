@@ -107,14 +107,18 @@ class CalendarHelper  {
 
                 let selectedCalendar = calendar
                 // look at the next 6 months
-                let startDate = Date()
+                let nowDate = Date()
                 let endDate = Date().addingTimeInterval(60*60*24*180)
-                let predicate = eventStore.predicateForEvents(withStart: startDate, end: endDate, calendars: [selectedCalendar])
+                let predicate = eventStore.predicateForEvents(withStart:nowDate, end: endDate, calendars: [selectedCalendar])
 //                print("calendar: \(selectedCalendar)")
                 let maybeZoomEvents : [EKEvent] = eventStore.events(matching: predicate)
                 for maybeZoomEvent:EKEvent in maybeZoomEvents {
                     if eventContainsZoomLink(event: maybeZoomEvent) {
-                        zoomEvents.append(ZoomEvent.init(event: maybeZoomEvent))
+                        if maybeZoomEvent.startDate > nowDate {
+                            zoomEvents.append(ZoomEvent.init(event: maybeZoomEvent))
+                        } else {
+                            print("discarding event: \(maybeZoomEvent.title!) because its start date is in the past")
+                        }
                     }
                 }
             }

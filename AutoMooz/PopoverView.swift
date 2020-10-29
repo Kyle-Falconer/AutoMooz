@@ -10,12 +10,13 @@ import SwiftUI
 struct PopoverView: View {
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Auto\nZoom")
-                .font(Font.system(size: 34.0))
-                .fontWeight(.semibold)
-                .multilineTextAlignment(.leading)
+            
+            Image("AutoMooz")
+                .resizable()
+                .frame(width: 170.0, height: 104.0, alignment: .topLeading)
                 .padding(.bottom, 12.0)
-                .frame(width: 300.0, alignment: .topLeading)
+                
+                
             Text("Next Event:")
                 .font(.body)
                 .multilineTextAlignment(.leading)
@@ -24,7 +25,7 @@ struct PopoverView: View {
             HStack {
                 
                 Button(action: {
-                    NSApp.sendAction(#selector(AppDelegate.openPreferencesWindow), to: nil, from:nil)
+                    SfxHelper.moo()
                 })
                 {
                     Text("Settings")

@@ -31,6 +31,8 @@ struct ContentView: View {
                 HStack {
                     Button(action: {
                         print("join button clicked")
+                        ZoomAppHelper.launchZoom(meetingUrl: zoomEvent.zoomLink!)
+                        NSApplication.shared.keyWindow?.close()
                     }) {
                         Text("Join")
                             .font(.system(size: geometry.size.width/6))
@@ -39,8 +41,8 @@ struct ContentView: View {
                             .background(RoundedRectangle(cornerRadius: 8).fill(Color.green))
                     }.buttonStyle(PlainButtonStyle())
                     Button(action: {
-                        // NSApplication.shared.keyWindow?.close()
-                        NSApp.hide(self)
+                         NSApplication.shared.keyWindow?.close()
+//                        NSApp.hide(self)
                     }) {
                         Text("Leave")
                             .font(.system(size: geometry.size.width/6))

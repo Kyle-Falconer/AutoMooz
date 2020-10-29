@@ -32,10 +32,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         let popoverView = PopoverView()
         
-        popover.contentSize = NSSize(width:360, height:360)
+        popover.contentSize = NSSize(width:360, height:200)
         popover.contentViewController = NSHostingController(rootView: popoverView)
         
         statusBar = StatusBarController.init(popover)
+        
         
         // Create the SwiftUI view and set the context as the value for the managedObjectContext environment keyPath.
         // Add `@Environment(\.managedObjectContext)` in the views that will need the context.
@@ -75,7 +76,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         print("opening the join meeting prompt")
-        let contentView = ContentView(zoomEvent: self.currentZoomEvent!).environment(\.managedObjectContext, persistentContainer.viewContext)
+
+        let contentView = ContentView(zoomEvent: self.currentZoomEvent!)
 
 //         Create the window and set the content view.
         joinMeetingWindow = NSWindow(
@@ -85,6 +87,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         joinMeetingWindow.center()
         joinMeetingWindow.setFrameAutosaveName("Main Window")
         joinMeetingWindow.contentView = NSHostingView(rootView: contentView)
+
         
         joinMeetingWindow.makeKeyAndOrderFront(nil)
         NSApp.activate(ignoringOtherApps: true)

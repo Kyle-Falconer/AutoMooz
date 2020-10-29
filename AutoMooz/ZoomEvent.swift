@@ -6,10 +6,11 @@
 //
 
 import EventKit
+import SwiftSoup
 
 class ZoomEvent: Equatable {
 
-    private let zoomLinkRegex = try! NSRegularExpression(pattern: #"zoom.us/j/(.*$)"#,
+    private static let zoomLinkRegex = try! NSRegularExpression(pattern: #"zoom.us/j/(.*$)"#,
                                                  options: .caseInsensitive)
     private var id: UUID
     var title: String
@@ -38,26 +39,39 @@ class ZoomEvent: Equatable {
         self.endDate = event.endDate
         self.originatingCalendarName = event.calendar.title
         self.hasBeenShown = false
-        self.zoomUrlFromEvent(event: event)
+        self.zoomLink = ZoomEvent.zoomUrlFromEvent(event: event)
     }
     
     func getUuid() -> UUID {
         return self.id
     }
-    
-    func zoomUrlFromEvent(event: EKEvent) -> Void {
+    public static func zoomUrlFromEvent(event: EKEvent) -> String? {
         if !event.hasNotes {
-            return
+            return nil
         }
-        let desc : String = event.notes!
-        parseZoomUrl(desc: desc)
+        return zoomUrlFromEventDescription(desc: event.notes!)
     }
     
-    func parseZoomUrl(desc: String) -> Void {
+    public static func zoomUrlFromEventDescription(desc: String) -> String? {
+        do {
+            let doc: Document = try SwiftSoup.parseBodyFragment(desc)
+            let link: Element = try doc.select("a").first()!
+            let linkHref: String = try link.attr("href")
+            return linkHref
+        } catch Exception.Error(let type, let message) {
+            print(message)
+        } catch {
+            print("error")
+        }
+        return nil
+    }
+    
+    public static func parseZoomIdFromUrl(desc: String) -> String? {
         let result = desc.groups(for: zoomLinkRegex)
         if result.count > 0 {
-            self.zoomId = result[0][0]
+            return result[0][0]
         }
+        return nil
     }
 
     
