@@ -1,4 +1,4 @@
-framework module Pods_AutoMooz {
+module Pods_AutoMooz {
   umbrella header "Pods-AutoMooz-umbrella.h"
 
   export *

@@ -3,113 +3,113 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		925B8AB1254693350029D194 /* ZoomEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925B8AB0254693350029D194 /* ZoomEvent.swift */; };
-		925B8AB925469FAE0029D194 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925B8AB825469FAE0029D194 /* Extensions.swift */; };
-		925B8ABE2546A4ED0029D194 /* TtsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925B8ABD2546A4ED0029D194 /* TtsHelper.swift */; };
-		925B8ACB2546A6F10029D194 /* SfxHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925B8ACA2546A6F10029D194 /* SfxHelper.swift */; };
-		925B8AD02546A7560029D194 /* Single_Cow-SoundBible.com-2051754137.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 925B8ACF2546A7560029D194 /* Single_Cow-SoundBible.com-2051754137.mp3 */; };
-		926BD8D12547CC44001D7FE2 /* ZoomAppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926BD8D02547CC44001D7FE2 /* ZoomAppHelper.swift */; };
-		926BD8D62547D21D001D7FE2 /* Bash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926BD8D52547D21D001D7FE2 /* Bash.swift */; };
-		92AF534C25447C10007A0E06 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF534B25447C10007A0E06 /* StatusBarController.swift */; };
-		92AF5359254481A0007A0E06 /* menubar_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AF5358254481A0007A0E06 /* menubar_icon.png */; };
-		92AF5361254483E8007A0E06 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF5360254483E8007A0E06 /* PopoverView.swift */; };
-		92AF5369254485B5007A0E06 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF5368254485B5007A0E06 /* EventMonitor.swift */; };
-		92D0C2BA2544666100D84858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D0C2B92544666100D84858 /* AppDelegate.swift */; };
-		92D0C2BC2544666100D84858 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D0C2BB2544666100D84858 /* ContentView.swift */; };
-		92D0C2BF2544666100D84858 /* AutoMooz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92D0C2BD2544666100D84858 /* AutoMooz.xcdatamodeld */; };
-		92D0C2C12544666300D84858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D0C2C02544666300D84858 /* Assets.xcassets */; };
-		92D0C2C42544666300D84858 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D0C2C32544666300D84858 /* Preview Assets.xcassets */; };
-		92D0C2C72544666300D84858 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D0C2C52544666300D84858 /* Main.storyboard */; };
-		92D0C2D32544666400D84858 /* AutoMoozTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D0C2D22544666400D84858 /* AutoMoozTests.swift */; };
-		92D0C2DE2544666400D84858 /* AutoZoomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D0C2DD2544666400D84858 /* AutoZoomUITests.swift */; };
-		92E33A7E2544A03900C893B6 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E33A7D2544A03900C893B6 /* CalendarHelper.swift */; };
-		92E33A9A2546330700C893B6 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E33A992546330700C893B6 /* PreferencesView.swift */; };
-		92E33AA42546357700C893B6 /* PaneIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E33AA32546357700C893B6 /* PaneIdentifier.swift */; };
-		92E33AA9254635A100C893B6 /* GeneralPreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E33AA8254635A100C893B6 /* GeneralPreferenceViewController.swift */; };
-		92E33AAE254635D200C893B6 /* AdvancedPreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E33AAD254635D200C893B6 /* AdvancedPreferenceViewController.swift */; };
-		B573F5F476459055F95F3893 /* Pods_AutoMooz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948C7E0627073700C98BFB9D /* Pods_AutoMooz.framework */; };
+		92F7F8B3254A6CB3000C0D6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7F8B2254A6CB3000C0D6A /* AppDelegate.swift */; };
+		92F7F8B5254A6CB3000C0D6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7F8B4254A6CB3000C0D6A /* ContentView.swift */; };
+		92F7F8B7254A6CB5000C0D6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F7F8B6254A6CB5000C0D6A /* Assets.xcassets */; };
+		92F7F8BA254A6CB5000C0D6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F7F8B9254A6CB5000C0D6A /* Preview Assets.xcassets */; };
+		92F7F8BD254A6CB5000C0D6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F7F8BB254A6CB5000C0D6A /* Main.storyboard */; };
+		92F7F8C9254A6CB5000C0D6A /* AutoMoozTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7F8C8254A6CB5000C0D6A /* AutoMoozTests.swift */; };
+		92F7F8D4254A6CB5000C0D6A /* AutoMoozUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7F8D3254A6CB5000C0D6A /* AutoMoozUITests.swift */; };
+		92F7F8FB254A6DB1000C0D6A /* ZoomAppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7F8EA254A6DB1000C0D6A /* ZoomAppHelper.swift */; };
+		92F7F8FC254A6DB1000C0D6A /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7F8EB254A6DB1000C0D6A /* PreferencesView.swift */; };
+		92F7F8FD254A6DB1000C0D6A /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7F8EC254A6DB1000C0D6A /* PopoverView.swift */; };
+		92F7F8FE254A6DB1000C0D6A /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7F8ED254A6DB1000C0D6A /* StatusBarController.swift */; };
+		92F7F8FF254A6DB1000C0D6A /* AdvancedPreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7F8EE254A6DB1000C0D6A /* AdvancedPreferenceViewController.swift */; };
+		92F7F902254A6DB1000C0D6A /* GeneralPreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7F8F1254A6DB1000C0D6A /* GeneralPreferenceViewController.swift */; };
+		92F7F903254A6DB1000C0D6A /* SfxHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7F8F2254A6DB1000C0D6A /* SfxHelper.swift */; };
+		92F7F904254A6DB1000C0D6A /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7F8F3254A6DB1000C0D6A /* EventMonitor.swift */; };
+		92F7F905254A6DB1000C0D6A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7F8F4254A6DB1000C0D6A /* Extensions.swift */; };
+		92F7F906254A6DB1000C0D6A /* PaneIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7F8F5254A6DB1000C0D6A /* PaneIdentifier.swift */; };
+		92F7F907254A6DB1000C0D6A /* ZoomEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7F8F6254A6DB1000C0D6A /* ZoomEvent.swift */; };
+		92F7F908254A6DB1000C0D6A /* Bash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7F8F7254A6DB1000C0D6A /* Bash.swift */; };
+		92F7F909254A6DB1000C0D6A /* Single_Cow-SoundBible.com-2051754137.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 92F7F8F8254A6DB1000C0D6A /* Single_Cow-SoundBible.com-2051754137.mp3 */; };
+		92F7F90A254A6DB1000C0D6A /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7F8F9254A6DB1000C0D6A /* CalendarHelper.swift */; };
+		92F7F90B254A6DB1000C0D6A /* TtsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7F8FA254A6DB1000C0D6A /* TtsHelper.swift */; };
+		92F7F931254A89F8000C0D6A /* ZoomLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7F930254A89F8000C0D6A /* ZoomLinkTests.swift */; };
+		B0AF0F7C1B5E88479BE5D6CB /* libPods-AutoMooz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5F171CF588F3726726838D0 /* libPods-AutoMooz.a */; };
+		C81F032F204F3A72AA8A32AE /* libPods-AutoMoozTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4FC8FCB02BB7A1A6CC4A7F /* libPods-AutoMoozTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		92D0C2CF2544666400D84858 /* PBXContainerItemProxy */ = {
+		92F7F8C5254A6CB5000C0D6A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 92D0C2AE2544666100D84858 /* Project object */;
+			containerPortal = 92F7F8A7254A6CB3000C0D6A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 92D0C2B52544666100D84858;
-			remoteInfo = AutoZoom;
+			remoteGlobalIDString = 92F7F8AE254A6CB3000C0D6A;
+			remoteInfo = AutoMooz;
 		};
-		92D0C2DA2544666400D84858 /* PBXContainerItemProxy */ = {
+		92F7F8D0254A6CB5000C0D6A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 92D0C2AE2544666100D84858 /* Project object */;
+			containerPortal = 92F7F8A7254A6CB3000C0D6A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 92D0C2B52544666100D84858;
-			remoteInfo = AutoZoom;
+			remoteGlobalIDString = 92F7F8AE254A6CB3000C0D6A;
+			remoteInfo = AutoMooz;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		12E8AA9FC8F32523278F969F /* Pods-AutoMooz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoMooz.release.xcconfig"; path = "Target Support Files/Pods-AutoMooz/Pods-AutoMooz.release.xcconfig"; sourceTree = "<group>"; };
-		14C657B66C83774DC021F670 /* Pods-AutoZoom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoZoom.release.xcconfig"; path = "Target Support Files/Pods-AutoZoom/Pods-AutoZoom.release.xcconfig"; sourceTree = "<group>"; };
-		6C82FC2D82ECDA16A764B450 /* Pods-AutoMooz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoMooz.debug.xcconfig"; path = "Target Support Files/Pods-AutoMooz/Pods-AutoMooz.debug.xcconfig"; sourceTree = "<group>"; };
-		925B8AB0254693350029D194 /* ZoomEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomEvent.swift; sourceTree = "<group>"; };
-		925B8AB825469FAE0029D194 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		925B8ABD2546A4ED0029D194 /* TtsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TtsHelper.swift; sourceTree = "<group>"; };
-		925B8ACA2546A6F10029D194 /* SfxHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SfxHelper.swift; sourceTree = "<group>"; };
-		925B8ACF2546A7560029D194 /* Single_Cow-SoundBible.com-2051754137.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Single_Cow-SoundBible.com-2051754137.mp3"; sourceTree = "<group>"; };
-		926BD8D02547CC44001D7FE2 /* ZoomAppHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomAppHelper.swift; sourceTree = "<group>"; };
-		926BD8D52547D21D001D7FE2 /* Bash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bash.swift; sourceTree = "<group>"; };
-		92AF534B25447C10007A0E06 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
-		92AF5358254481A0007A0E06 /* menubar_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menubar_icon.png; path = ../../../autozoom/button_images/menubar_icon.png; sourceTree = "<group>"; };
-		92AF5360254483E8007A0E06 /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
-		92AF5368254485B5007A0E06 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
-		92D0C2B62544666100D84858 /* AutoMooz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoMooz.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		92D0C2B92544666100D84858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92D0C2BB2544666100D84858 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		92D0C2BE2544666100D84858 /* AutoZoom.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AutoZoom.xcdatamodel; sourceTree = "<group>"; };
-		92D0C2C02544666300D84858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		92D0C2C32544666300D84858 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		92D0C2C62544666300D84858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		92D0C2C82544666300D84858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92D0C2C92544666300D84858 /* AutoMooz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoMooz.entitlements; sourceTree = "<group>"; };
-		92D0C2CE2544666400D84858 /* AutoMoozTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoMoozTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		92D0C2D22544666400D84858 /* AutoMoozTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMoozTests.swift; sourceTree = "<group>"; };
-		92D0C2D42544666400D84858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92D0C2D92544666400D84858 /* AutoMoozUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoMoozUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		92D0C2DD2544666400D84858 /* AutoZoomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoZoomUITests.swift; sourceTree = "<group>"; };
-		92D0C2DF2544666400D84858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92E33A7125449DC400C893B6 /* libGoogleAPIClientForREST.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGoogleAPIClientForREST.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		92E33A7325449DE100C893B6 /* libGTMAppAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGTMAppAuth.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		92E33A7525449DE700C893B6 /* libGTMSessionFetcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGTMSessionFetcher.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		92E33A7D2544A03900C893B6 /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
-		92E33A992546330700C893B6 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
-		92E33AA32546357700C893B6 /* PaneIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaneIdentifier.swift; sourceTree = "<group>"; };
-		92E33AA8254635A100C893B6 /* GeneralPreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPreferenceViewController.swift; sourceTree = "<group>"; };
-		92E33AAD254635D200C893B6 /* AdvancedPreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedPreferenceViewController.swift; sourceTree = "<group>"; };
-		948C7E0627073700C98BFB9D /* Pods_AutoMooz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoMooz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9A80C2330C6A4BDAD81AA56 /* Pods-AutoZoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoZoom.debug.xcconfig"; path = "Target Support Files/Pods-AutoZoom/Pods-AutoZoom.debug.xcconfig"; sourceTree = "<group>"; };
+		056C78D66578FEFAE333C490 /* Pods-AutoMooz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoMooz.debug.xcconfig"; path = "Target Support Files/Pods-AutoMooz/Pods-AutoMooz.debug.xcconfig"; sourceTree = "<group>"; };
+		244DD4ADB2B1BC166AE7E463 /* Pods-AutoMoozTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoMoozTests.release.xcconfig"; path = "Target Support Files/Pods-AutoMoozTests/Pods-AutoMoozTests.release.xcconfig"; sourceTree = "<group>"; };
+		3F4FC8FCB02BB7A1A6CC4A7F /* libPods-AutoMoozTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutoMoozTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F7F8AF254A6CB3000C0D6A /* AutoMooz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoMooz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F7F8B2254A6CB3000C0D6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		92F7F8B4254A6CB3000C0D6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		92F7F8B6254A6CB5000C0D6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92F7F8B9254A6CB5000C0D6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		92F7F8BC254A6CB5000C0D6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92F7F8BE254A6CB5000C0D6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92F7F8BF254A6CB5000C0D6A /* AutoMooz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoMooz.entitlements; sourceTree = "<group>"; };
+		92F7F8C4254A6CB5000C0D6A /* AutoMoozTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoMoozTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F7F8C8254A6CB5000C0D6A /* AutoMoozTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMoozTests.swift; sourceTree = "<group>"; };
+		92F7F8CA254A6CB5000C0D6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92F7F8CF254A6CB5000C0D6A /* AutoMoozUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoMoozUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F7F8D3254A6CB5000C0D6A /* AutoMoozUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMoozUITests.swift; sourceTree = "<group>"; };
+		92F7F8D5254A6CB5000C0D6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92F7F8EA254A6DB1000C0D6A /* ZoomAppHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomAppHelper.swift; sourceTree = "<group>"; };
+		92F7F8EB254A6DB1000C0D6A /* PreferencesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		92F7F8EC254A6DB1000C0D6A /* PopoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
+		92F7F8ED254A6DB1000C0D6A /* StatusBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		92F7F8EE254A6DB1000C0D6A /* AdvancedPreferenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedPreferenceViewController.swift; sourceTree = "<group>"; };
+		92F7F8F1254A6DB1000C0D6A /* GeneralPreferenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralPreferenceViewController.swift; sourceTree = "<group>"; };
+		92F7F8F2254A6DB1000C0D6A /* SfxHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SfxHelper.swift; sourceTree = "<group>"; };
+		92F7F8F3254A6DB1000C0D6A /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		92F7F8F4254A6DB1000C0D6A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		92F7F8F5254A6DB1000C0D6A /* PaneIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaneIdentifier.swift; sourceTree = "<group>"; };
+		92F7F8F6254A6DB1000C0D6A /* ZoomEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomEvent.swift; sourceTree = "<group>"; };
+		92F7F8F7254A6DB1000C0D6A /* Bash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bash.swift; sourceTree = "<group>"; };
+		92F7F8F8254A6DB1000C0D6A /* Single_Cow-SoundBible.com-2051754137.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Single_Cow-SoundBible.com-2051754137.mp3"; sourceTree = "<group>"; };
+		92F7F8F9254A6DB1000C0D6A /* CalendarHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
+		92F7F8FA254A6DB1000C0D6A /* TtsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TtsHelper.swift; sourceTree = "<group>"; };
+		92F7F930254A89F8000C0D6A /* ZoomLinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomLinkTests.swift; sourceTree = "<group>"; };
+		92F7F945254A8BB6000C0D6A /* libPreferences.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPreferences.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F7F947254A8BB6000C0D6A /* libSwiftSoup.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSwiftSoup.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0FE9D266222D065E5722F3B /* Pods-AutoMooz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoMooz.release.xcconfig"; path = "Target Support Files/Pods-AutoMooz/Pods-AutoMooz.release.xcconfig"; sourceTree = "<group>"; };
+		A5F171CF588F3726726838D0 /* libPods-AutoMooz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutoMooz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE7EC476C1DA640D9E3CF1C6 /* Pods-AutoMoozTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoMoozTests.debug.xcconfig"; path = "Target Support Files/Pods-AutoMoozTests/Pods-AutoMoozTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		92D0C2B32544666100D84858 /* Frameworks */ = {
+		92F7F8AC254A6CB3000C0D6A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B573F5F476459055F95F3893 /* Pods_AutoMooz.framework in Frameworks */,
+				B0AF0F7C1B5E88479BE5D6CB /* libPods-AutoMooz.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92D0C2CB2544666400D84858 /* Frameworks */ = {
+		92F7F8C1254A6CB5000C0D6A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C81F032F204F3A72AA8A32AE /* libPods-AutoMoozTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92D0C2D62544666400D84858 /* Frameworks */ = {
+		92F7F8CC254A6CB5000C0D6A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -119,189 +119,187 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C0A1D4B650588444074730E /* Pods */ = {
+		0262D828625BE65D6AA6FCC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A9A80C2330C6A4BDAD81AA56 /* Pods-AutoZoom.debug.xcconfig */,
-				14C657B66C83774DC021F670 /* Pods-AutoZoom.release.xcconfig */,
-				6C82FC2D82ECDA16A764B450 /* Pods-AutoMooz.debug.xcconfig */,
-				12E8AA9FC8F32523278F969F /* Pods-AutoMooz.release.xcconfig */,
+				92F7F945254A8BB6000C0D6A /* libPreferences.a */,
+				92F7F947254A8BB6000C0D6A /* libSwiftSoup.a */,
+				A5F171CF588F3726726838D0 /* libPods-AutoMooz.a */,
+				3F4FC8FCB02BB7A1A6CC4A7F /* libPods-AutoMoozTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C5EC8841529AEC92FE4A742 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				056C78D66578FEFAE333C490 /* Pods-AutoMooz.debug.xcconfig */,
+				A0FE9D266222D065E5722F3B /* Pods-AutoMooz.release.xcconfig */,
+				BE7EC476C1DA640D9E3CF1C6 /* Pods-AutoMoozTests.debug.xcconfig */,
+				244DD4ADB2B1BC166AE7E463 /* Pods-AutoMoozTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		92D0C2AD2544666100D84858 = {
+		92F7F8A6254A6CB3000C0D6A = {
 			isa = PBXGroup;
 			children = (
-				92D0C2B82544666100D84858 /* AutoMooz */,
-				92D0C2D12544666400D84858 /* AutoMoozTests */,
-				92D0C2DC2544666400D84858 /* AutoMoozUITests */,
-				92D0C2B72544666100D84858 /* Products */,
-				1C0A1D4B650588444074730E /* Pods */,
-				F288CF3ED147BDEDB0EA2C16 /* Frameworks */,
+				92F7F8B1254A6CB3000C0D6A /* AutoMooz */,
+				92F7F8C7254A6CB5000C0D6A /* AutoMoozTests */,
+				92F7F8D2254A6CB5000C0D6A /* AutoMoozUITests */,
+				92F7F8B0254A6CB3000C0D6A /* Products */,
+				1C5EC8841529AEC92FE4A742 /* Pods */,
+				0262D828625BE65D6AA6FCC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		92D0C2B72544666100D84858 /* Products */ = {
+		92F7F8B0254A6CB3000C0D6A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				92D0C2B62544666100D84858 /* AutoMooz.app */,
-				92D0C2CE2544666400D84858 /* AutoMoozTests.xctest */,
-				92D0C2D92544666400D84858 /* AutoMoozUITests.xctest */,
+				92F7F8AF254A6CB3000C0D6A /* AutoMooz.app */,
+				92F7F8C4254A6CB5000C0D6A /* AutoMoozTests.xctest */,
+				92F7F8CF254A6CB5000C0D6A /* AutoMoozUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		92D0C2B82544666100D84858 /* AutoMooz */ = {
+		92F7F8B1254A6CB3000C0D6A /* AutoMooz */ = {
 			isa = PBXGroup;
 			children = (
-				92D0C2B92544666100D84858 /* AppDelegate.swift */,
-				92D0C2BB2544666100D84858 /* ContentView.swift */,
-				92AF5360254483E8007A0E06 /* PopoverView.swift */,
-				92AF534B25447C10007A0E06 /* StatusBarController.swift */,
-				92AF5368254485B5007A0E06 /* EventMonitor.swift */,
-				92E33A7D2544A03900C893B6 /* CalendarHelper.swift */,
-				925B8AB0254693350029D194 /* ZoomEvent.swift */,
-				926BD8D02547CC44001D7FE2 /* ZoomAppHelper.swift */,
-				925B8AB825469FAE0029D194 /* Extensions.swift */,
-				925B8ABD2546A4ED0029D194 /* TtsHelper.swift */,
-				925B8ACA2546A6F10029D194 /* SfxHelper.swift */,
-				92D0C2C02544666300D84858 /* Assets.xcassets */,
-				92D0C2C52544666300D84858 /* Main.storyboard */,
-				925B8ACF2546A7560029D194 /* Single_Cow-SoundBible.com-2051754137.mp3 */,
-				92AF5358254481A0007A0E06 /* menubar_icon.png */,
-				92D0C2C82544666300D84858 /* Info.plist */,
-				926BD8D52547D21D001D7FE2 /* Bash.swift */,
-				92D0C2C92544666300D84858 /* AutoMooz.entitlements */,
-				92D0C2BD2544666100D84858 /* AutoMooz.xcdatamodeld */,
-				92D0C2C22544666300D84858 /* Preview Content */,
-				92E33A992546330700C893B6 /* PreferencesView.swift */,
-				92E33AA32546357700C893B6 /* PaneIdentifier.swift */,
-				92E33AA8254635A100C893B6 /* GeneralPreferenceViewController.swift */,
-				92E33AAD254635D200C893B6 /* AdvancedPreferenceViewController.swift */,
+				92F7F8B2254A6CB3000C0D6A /* AppDelegate.swift */,
+				92F7F8F7254A6DB1000C0D6A /* Bash.swift */,
+				92F7F8F9254A6DB1000C0D6A /* CalendarHelper.swift */,
+				92F7F8B4254A6CB3000C0D6A /* ContentView.swift */,
+				92F7F8EE254A6DB1000C0D6A /* AdvancedPreferenceViewController.swift */,
+				92F7F8F3254A6DB1000C0D6A /* EventMonitor.swift */,
+				92F7F8F4254A6DB1000C0D6A /* Extensions.swift */,
+				92F7F8F1254A6DB1000C0D6A /* GeneralPreferenceViewController.swift */,
+				92F7F8F5254A6DB1000C0D6A /* PaneIdentifier.swift */,
+				92F7F8EC254A6DB1000C0D6A /* PopoverView.swift */,
+				92F7F8EB254A6DB1000C0D6A /* PreferencesView.swift */,
+				92F7F8F2254A6DB1000C0D6A /* SfxHelper.swift */,
+				92F7F8F8254A6DB1000C0D6A /* Single_Cow-SoundBible.com-2051754137.mp3 */,
+				92F7F8ED254A6DB1000C0D6A /* StatusBarController.swift */,
+				92F7F8FA254A6DB1000C0D6A /* TtsHelper.swift */,
+				92F7F8EA254A6DB1000C0D6A /* ZoomAppHelper.swift */,
+				92F7F8F6254A6DB1000C0D6A /* ZoomEvent.swift */,
+				92F7F8B6254A6CB5000C0D6A /* Assets.xcassets */,
+				92F7F8BB254A6CB5000C0D6A /* Main.storyboard */,
+				92F7F8BE254A6CB5000C0D6A /* Info.plist */,
+				92F7F8BF254A6CB5000C0D6A /* AutoMooz.entitlements */,
+				92F7F8B8254A6CB5000C0D6A /* Preview Content */,
 			);
 			path = AutoMooz;
 			sourceTree = "<group>";
 		};
-		92D0C2C22544666300D84858 /* Preview Content */ = {
+		92F7F8B8254A6CB5000C0D6A /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				92D0C2C32544666300D84858 /* Preview Assets.xcassets */,
+				92F7F8B9254A6CB5000C0D6A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		92D0C2D12544666400D84858 /* AutoMoozTests */ = {
+		92F7F8C7254A6CB5000C0D6A /* AutoMoozTests */ = {
 			isa = PBXGroup;
 			children = (
-				92D0C2D22544666400D84858 /* AutoMoozTests.swift */,
-				92D0C2D42544666400D84858 /* Info.plist */,
+				92F7F8C8254A6CB5000C0D6A /* AutoMoozTests.swift */,
+				92F7F8CA254A6CB5000C0D6A /* Info.plist */,
+				92F7F930254A89F8000C0D6A /* ZoomLinkTests.swift */,
 			);
 			path = AutoMoozTests;
 			sourceTree = "<group>";
 		};
-		92D0C2DC2544666400D84858 /* AutoMoozUITests */ = {
+		92F7F8D2254A6CB5000C0D6A /* AutoMoozUITests */ = {
 			isa = PBXGroup;
 			children = (
-				92D0C2DD2544666400D84858 /* AutoZoomUITests.swift */,
-				92D0C2DF2544666400D84858 /* Info.plist */,
+				92F7F8D3254A6CB5000C0D6A /* AutoMoozUITests.swift */,
+				92F7F8D5254A6CB5000C0D6A /* Info.plist */,
 			);
 			path = AutoMoozUITests;
-			sourceTree = "<group>";
-		};
-		F288CF3ED147BDEDB0EA2C16 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				92E33A7525449DE700C893B6 /* libGTMSessionFetcher.a */,
-				92E33A7325449DE100C893B6 /* libGTMAppAuth.a */,
-				92E33A7125449DC400C893B6 /* libGoogleAPIClientForREST.a */,
-				948C7E0627073700C98BFB9D /* Pods_AutoMooz.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		92D0C2B52544666100D84858 /* AutoMooz */ = {
+		92F7F8AE254A6CB3000C0D6A /* AutoMooz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92D0C2E22544666400D84858 /* Build configuration list for PBXNativeTarget "AutoMooz" */;
+			buildConfigurationList = 92F7F8D8254A6CB5000C0D6A /* Build configuration list for PBXNativeTarget "AutoMooz" */;
 			buildPhases = (
-				736A7AC78EE5EED3BF06600A /* [CP] Check Pods Manifest.lock */,
-				92D0C2B22544666100D84858 /* Sources */,
-				92D0C2B32544666100D84858 /* Frameworks */,
-				92D0C2B42544666100D84858 /* Resources */,
-				78F4204A868371A35409E849 /* [CP] Embed Pods Frameworks */,
+				63C994855CA898EF4C91ED47 /* [CP] Check Pods Manifest.lock */,
+				92F7F8AB254A6CB3000C0D6A /* Sources */,
+				92F7F8AC254A6CB3000C0D6A /* Frameworks */,
+				92F7F8AD254A6CB3000C0D6A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = AutoMooz;
-			productName = AutoZoom;
-			productReference = 92D0C2B62544666100D84858 /* AutoMooz.app */;
+			productName = AutoMooz;
+			productReference = 92F7F8AF254A6CB3000C0D6A /* AutoMooz.app */;
 			productType = "com.apple.product-type.application";
 		};
-		92D0C2CD2544666400D84858 /* AutoMoozTests */ = {
+		92F7F8C3254A6CB5000C0D6A /* AutoMoozTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92D0C2E52544666400D84858 /* Build configuration list for PBXNativeTarget "AutoMoozTests" */;
+			buildConfigurationList = 92F7F8DB254A6CB5000C0D6A /* Build configuration list for PBXNativeTarget "AutoMoozTests" */;
 			buildPhases = (
-				92D0C2CA2544666400D84858 /* Sources */,
-				92D0C2CB2544666400D84858 /* Frameworks */,
-				92D0C2CC2544666400D84858 /* Resources */,
+				287F4C0DA3DF0CA91EE4CC5D /* [CP] Check Pods Manifest.lock */,
+				92F7F8C0254A6CB5000C0D6A /* Sources */,
+				92F7F8C1254A6CB5000C0D6A /* Frameworks */,
+				92F7F8C2254A6CB5000C0D6A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				92D0C2D02544666400D84858 /* PBXTargetDependency */,
+				92F7F8C6254A6CB5000C0D6A /* PBXTargetDependency */,
 			);
 			name = AutoMoozTests;
-			productName = AutoZoomTests;
-			productReference = 92D0C2CE2544666400D84858 /* AutoMoozTests.xctest */;
+			productName = AutoMoozTests;
+			productReference = 92F7F8C4254A6CB5000C0D6A /* AutoMoozTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		92D0C2D82544666400D84858 /* AutoMoozUITests */ = {
+		92F7F8CE254A6CB5000C0D6A /* AutoMoozUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92D0C2E82544666400D84858 /* Build configuration list for PBXNativeTarget "AutoMoozUITests" */;
+			buildConfigurationList = 92F7F8DE254A6CB5000C0D6A /* Build configuration list for PBXNativeTarget "AutoMoozUITests" */;
 			buildPhases = (
-				92D0C2D52544666400D84858 /* Sources */,
-				92D0C2D62544666400D84858 /* Frameworks */,
-				92D0C2D72544666400D84858 /* Resources */,
+				92F7F8CB254A6CB5000C0D6A /* Sources */,
+				92F7F8CC254A6CB5000C0D6A /* Frameworks */,
+				92F7F8CD254A6CB5000C0D6A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				92D0C2DB2544666400D84858 /* PBXTargetDependency */,
+				92F7F8D1254A6CB5000C0D6A /* PBXTargetDependency */,
 			);
 			name = AutoMoozUITests;
-			productName = AutoZoomUITests;
-			productReference = 92D0C2D92544666400D84858 /* AutoMoozUITests.xctest */;
+			productName = AutoMoozUITests;
+			productReference = 92F7F8CF254A6CB5000C0D6A /* AutoMoozUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		92D0C2AE2544666100D84858 /* Project object */ = {
+		92F7F8A7254A6CB3000C0D6A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
-					92D0C2B52544666100D84858 = {
+					92F7F8AE254A6CB3000C0D6A = {
 						CreatedOnToolsVersion = 12.1;
-						LastSwiftMigration = 1210;
 					};
-					92D0C2CD2544666400D84858 = {
+					92F7F8C3254A6CB5000C0D6A = {
 						CreatedOnToolsVersion = 12.1;
-						TestTargetID = 92D0C2B52544666100D84858;
+						TestTargetID = 92F7F8AE254A6CB3000C0D6A;
 					};
-					92D0C2D82544666400D84858 = {
+					92F7F8CE254A6CB5000C0D6A = {
 						CreatedOnToolsVersion = 12.1;
-						TestTargetID = 92D0C2B52544666100D84858;
+						TestTargetID = 92F7F8AE254A6CB3000C0D6A;
 					};
 				};
 			};
-			buildConfigurationList = 92D0C2B12544666100D84858 /* Build configuration list for PBXProject "AutoMooz" */;
+			buildConfigurationList = 92F7F8AA254A6CB3000C0D6A /* Build configuration list for PBXProject "AutoMooz" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -309,39 +307,38 @@
 				en,
 				Base,
 			);
-			mainGroup = 92D0C2AD2544666100D84858;
-			productRefGroup = 92D0C2B72544666100D84858 /* Products */;
+			mainGroup = 92F7F8A6254A6CB3000C0D6A;
+			productRefGroup = 92F7F8B0254A6CB3000C0D6A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				92D0C2B52544666100D84858 /* AutoMooz */,
-				92D0C2CD2544666400D84858 /* AutoMoozTests */,
-				92D0C2D82544666400D84858 /* AutoMoozUITests */,
+				92F7F8AE254A6CB3000C0D6A /* AutoMooz */,
+				92F7F8C3254A6CB5000C0D6A /* AutoMoozTests */,
+				92F7F8CE254A6CB5000C0D6A /* AutoMoozUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		92D0C2B42544666100D84858 /* Resources */ = {
+		92F7F8AD254A6CB3000C0D6A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92AF5359254481A0007A0E06 /* menubar_icon.png in Resources */,
-				925B8AD02546A7560029D194 /* Single_Cow-SoundBible.com-2051754137.mp3 in Resources */,
-				92D0C2C72544666300D84858 /* Main.storyboard in Resources */,
-				92D0C2C42544666300D84858 /* Preview Assets.xcassets in Resources */,
-				92D0C2C12544666300D84858 /* Assets.xcassets in Resources */,
+				92F7F8BD254A6CB5000C0D6A /* Main.storyboard in Resources */,
+				92F7F909254A6DB1000C0D6A /* Single_Cow-SoundBible.com-2051754137.mp3 in Resources */,
+				92F7F8BA254A6CB5000C0D6A /* Preview Assets.xcassets in Resources */,
+				92F7F8B7254A6CB5000C0D6A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92D0C2CC2544666400D84858 /* Resources */ = {
+		92F7F8C2254A6CB5000C0D6A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92D0C2D72544666400D84858 /* Resources */ = {
+		92F7F8CD254A6CB5000C0D6A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -351,7 +348,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		736A7AC78EE5EED3BF06600A /* [CP] Check Pods Manifest.lock */ = {
+		287F4C0DA3DF0CA91EE4CC5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AutoMoozTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63C994855CA898EF4C91ED47 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -373,86 +392,69 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		78F4204A868371A35409E849 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AutoMooz/Pods-AutoMooz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AutoMooz/Pods-AutoMooz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AutoMooz/Pods-AutoMooz-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		92D0C2B22544666100D84858 /* Sources */ = {
+		92F7F8AB254A6CB3000C0D6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92E33AA9254635A100C893B6 /* GeneralPreferenceViewController.swift in Sources */,
-				925B8ABE2546A4ED0029D194 /* TtsHelper.swift in Sources */,
-				925B8AB1254693350029D194 /* ZoomEvent.swift in Sources */,
-				92D0C2BF2544666100D84858 /* AutoMooz.xcdatamodeld in Sources */,
-				926BD8D12547CC44001D7FE2 /* ZoomAppHelper.swift in Sources */,
-				925B8ACB2546A6F10029D194 /* SfxHelper.swift in Sources */,
-				92E33A7E2544A03900C893B6 /* CalendarHelper.swift in Sources */,
-				926BD8D62547D21D001D7FE2 /* Bash.swift in Sources */,
-				92AF534C25447C10007A0E06 /* StatusBarController.swift in Sources */,
-				92E33AAE254635D200C893B6 /* AdvancedPreferenceViewController.swift in Sources */,
-				92E33AA42546357700C893B6 /* PaneIdentifier.swift in Sources */,
-				92D0C2BC2544666100D84858 /* ContentView.swift in Sources */,
-				925B8AB925469FAE0029D194 /* Extensions.swift in Sources */,
-				92AF5369254485B5007A0E06 /* EventMonitor.swift in Sources */,
-				92E33A9A2546330700C893B6 /* PreferencesView.swift in Sources */,
-				92AF5361254483E8007A0E06 /* PopoverView.swift in Sources */,
-				92D0C2BA2544666100D84858 /* AppDelegate.swift in Sources */,
+				92F7F902254A6DB1000C0D6A /* GeneralPreferenceViewController.swift in Sources */,
+				92F7F90B254A6DB1000C0D6A /* TtsHelper.swift in Sources */,
+				92F7F907254A6DB1000C0D6A /* ZoomEvent.swift in Sources */,
+				92F7F908254A6DB1000C0D6A /* Bash.swift in Sources */,
+				92F7F906254A6DB1000C0D6A /* PaneIdentifier.swift in Sources */,
+				92F7F8FF254A6DB1000C0D6A /* AdvancedPreferenceViewController.swift in Sources */,
+				92F7F904254A6DB1000C0D6A /* EventMonitor.swift in Sources */,
+				92F7F90A254A6DB1000C0D6A /* CalendarHelper.swift in Sources */,
+				92F7F8B5254A6CB3000C0D6A /* ContentView.swift in Sources */,
+				92F7F8FE254A6DB1000C0D6A /* StatusBarController.swift in Sources */,
+				92F7F8FC254A6DB1000C0D6A /* PreferencesView.swift in Sources */,
+				92F7F905254A6DB1000C0D6A /* Extensions.swift in Sources */,
+				92F7F903254A6DB1000C0D6A /* SfxHelper.swift in Sources */,
+				92F7F8B3254A6CB3000C0D6A /* AppDelegate.swift in Sources */,
+				92F7F8FD254A6DB1000C0D6A /* PopoverView.swift in Sources */,
+				92F7F8FB254A6DB1000C0D6A /* ZoomAppHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92D0C2CA2544666400D84858 /* Sources */ = {
+		92F7F8C0254A6CB5000C0D6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92D0C2D32544666400D84858 /* AutoMoozTests.swift in Sources */,
+				92F7F931254A89F8000C0D6A /* ZoomLinkTests.swift in Sources */,
+				92F7F8C9254A6CB5000C0D6A /* AutoMoozTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92D0C2D52544666400D84858 /* Sources */ = {
+		92F7F8CB254A6CB5000C0D6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92D0C2DE2544666400D84858 /* AutoZoomUITests.swift in Sources */,
+				92F7F8D4254A6CB5000C0D6A /* AutoMoozUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		92D0C2D02544666400D84858 /* PBXTargetDependency */ = {
+		92F7F8C6254A6CB5000C0D6A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 92D0C2B52544666100D84858 /* AutoMooz */;
-			targetProxy = 92D0C2CF2544666400D84858 /* PBXContainerItemProxy */;
+			target = 92F7F8AE254A6CB3000C0D6A /* AutoMooz */;
+			targetProxy = 92F7F8C5254A6CB5000C0D6A /* PBXContainerItemProxy */;
 		};
-		92D0C2DB2544666400D84858 /* PBXTargetDependency */ = {
+		92F7F8D1254A6CB5000C0D6A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 92D0C2B52544666100D84858 /* AutoMooz */;
-			targetProxy = 92D0C2DA2544666400D84858 /* PBXContainerItemProxy */;
+			target = 92F7F8AE254A6CB3000C0D6A /* AutoMooz */;
+			targetProxy = 92F7F8D0254A6CB5000C0D6A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		92D0C2C52544666300D84858 /* Main.storyboard */ = {
+		92F7F8BB254A6CB5000C0D6A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				92D0C2C62544666300D84858 /* Base */,
+				92F7F8BC254A6CB5000C0D6A /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -460,7 +462,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		92D0C2E02544666400D84858 /* Debug */ = {
+		92F7F8D6254A6CB5000C0D6A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -521,7 +523,7 @@
 			};
 			name = Debug;
 		};
-		92D0C2E12544666400D84858 /* Release */ = {
+		92F7F8D7254A6CB5000C0D6A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -575,14 +577,14 @@
 			};
 			name = Release;
 		};
-		92D0C2E32544666400D84858 /* Debug */ = {
+		92F7F8D9254A6CB5000C0D6A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C82FC2D82ECDA16A764B450 /* Pods-AutoMooz.debug.xcconfig */;
+			baseConfigurationReference = 056C78D66578FEFAE333C490 /* Pods-AutoMooz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = AutoMooz/AutoMooz.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"AutoMooz/Preview Content\"";
@@ -597,19 +599,18 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = casa.falconer.AutoMooz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		92D0C2E42544666400D84858 /* Release */ = {
+		92F7F8DA254A6CB5000C0D6A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12E8AA9FC8F32523278F969F /* Pods-AutoMooz.release.xcconfig */;
+			baseConfigurationReference = A0FE9D266222D065E5722F3B /* Pods-AutoMooz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = AutoMooz/AutoMooz.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"AutoMooz/Preview Content\"";
@@ -628,13 +629,15 @@
 			};
 			name = Release;
 		};
-		92D0C2E62544666400D84858 /* Debug */ = {
+		92F7F8DC254A6CB5000C0D6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE7EC476C1DA640D9E3CF1C6 /* Pods-AutoMoozTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = GDV76FJJZ5;
 				INFOPLIST_FILE = AutoMoozTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -649,13 +652,15 @@
 			};
 			name = Debug;
 		};
-		92D0C2E72544666400D84858 /* Release */ = {
+		92F7F8DD254A6CB5000C0D6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244DD4ADB2B1BC166AE7E463 /* Pods-AutoMoozTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = GDV76FJJZ5;
 				INFOPLIST_FILE = AutoMoozTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -670,12 +675,13 @@
 			};
 			name = Release;
 		};
-		92D0C2E92544666400D84858 /* Debug */ = {
+		92F7F8DF254A6CB5000C0D6A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = GDV76FJJZ5;
 				INFOPLIST_FILE = AutoMoozUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -689,12 +695,13 @@
 			};
 			name = Debug;
 		};
-		92D0C2EA2544666400D84858 /* Release */ = {
+		92F7F8E0254A6CB5000C0D6A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = GDV76FJJZ5;
 				INFOPLIST_FILE = AutoMoozUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -711,56 +718,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		92D0C2B12544666100D84858 /* Build configuration list for PBXProject "AutoMooz" */ = {
+		92F7F8AA254A6CB3000C0D6A /* Build configuration list for PBXProject "AutoMooz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				92D0C2E02544666400D84858 /* Debug */,
-				92D0C2E12544666400D84858 /* Release */,
+				92F7F8D6254A6CB5000C0D6A /* Debug */,
+				92F7F8D7254A6CB5000C0D6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92D0C2E22544666400D84858 /* Build configuration list for PBXNativeTarget "AutoMooz" */ = {
+		92F7F8D8254A6CB5000C0D6A /* Build configuration list for PBXNativeTarget "AutoMooz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				92D0C2E32544666400D84858 /* Debug */,
-				92D0C2E42544666400D84858 /* Release */,
+				92F7F8D9254A6CB5000C0D6A /* Debug */,
+				92F7F8DA254A6CB5000C0D6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92D0C2E52544666400D84858 /* Build configuration list for PBXNativeTarget "AutoMoozTests" */ = {
+		92F7F8DB254A6CB5000C0D6A /* Build configuration list for PBXNativeTarget "AutoMoozTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				92D0C2E62544666400D84858 /* Debug */,
-				92D0C2E72544666400D84858 /* Release */,
+				92F7F8DC254A6CB5000C0D6A /* Debug */,
+				92F7F8DD254A6CB5000C0D6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92D0C2E82544666400D84858 /* Build configuration list for PBXNativeTarget "AutoMoozUITests" */ = {
+		92F7F8DE254A6CB5000C0D6A /* Build configuration list for PBXNativeTarget "AutoMoozUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				92D0C2E92544666400D84858 /* Debug */,
-				92D0C2EA2544666400D84858 /* Release */,
+				92F7F8DF254A6CB5000C0D6A /* Debug */,
+				92F7F8E0254A6CB5000C0D6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		92D0C2BD2544666100D84858 /* AutoMooz.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				92D0C2BE2544666100D84858 /* AutoZoom.xcdatamodel */,
-			);
-			currentVersion = 92D0C2BE2544666100D84858 /* AutoZoom.xcdatamodel */;
-			path = AutoMooz.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = 92D0C2AE2544666100D84858 /* Project object */;
+	rootObject = 92F7F8A7254A6CB3000C0D6A /* Project object */;
 }

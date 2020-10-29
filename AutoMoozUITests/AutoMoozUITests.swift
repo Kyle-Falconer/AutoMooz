@@ -1,8 +1,8 @@
 //
 //  AutoMoozUITests.swift
-//  AutoMoozITests
+//  AutoMoozUITests
 //
-//  Created by Kyle Falconer on 10/24/20.
+//  Created by Kyle Falconer on 10/28/20.
 //
 
 import XCTest

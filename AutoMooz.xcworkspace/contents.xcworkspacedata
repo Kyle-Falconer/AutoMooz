@@ -2,12 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/kylefalconer/sources/autozoom-macos/AutoZoom/AutoMooz.xcodeproj">
+      location = "group:AutoMooz.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:AutoMooz.xcodeproj">
    </FileRef>
 </Workspace>

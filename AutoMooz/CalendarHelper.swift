@@ -10,7 +10,7 @@ import EventKit
 class CalendarHelper  {
     //  zoom_id = re.search(r"zoom.us/j/(.*$)", self.event_url).group(1)
     // zoom_url = f"zoommtg://zoom.us/join?confno={zoom_id}"
-    let zoomLinkRegex = try! NSRegularExpression(pattern: #"zoom.us/j/(.*$)"#,
+    let zoomLinkRegex = try! NSRegularExpression(pattern: #"zoom.us/j/([^/"]*)"#,
                                                  options: .caseInsensitive)
 
     private let eventStore: EKEventStore
@@ -62,6 +62,7 @@ class CalendarHelper  {
         case .restricted, .denied:
             // TODO: prompt user to unblock permissions on calendar or show warning
             print("permissions are: \(status)")
+            requestAccessToCalendar()
             break
         @unknown default:
             print("unknown status: \(status)")
@@ -146,11 +147,18 @@ class CalendarHelper  {
         }
         let desc : String = event.notes!
 //        print(desc)
-        if let match = zoomLinkRegex.firstMatch(in:desc, range: NSRange(location: 0, length: desc.utf16.count)) {
+        let matchGroups = desc.groups(for: zoomLinkRegex)
+        if matchGroups.count > 0 {
             let eventIdentifier : String = event.title
-            print("Got match for event: \(eventIdentifier) and zoom link: \(match)")
+            let zoomLink = matchGroups[0][0]
+            print("Got match for event: \(eventIdentifier) and zoom link: \(zoomLink)")
             return true
         }
+//        if let match = zoomLinkRegex.firstMatch(in:desc, range: NSRange(location: 0, length: desc.utf16.count)) {
+//            let eventIdentifier : String = event.title
+//            print("Got match for event: \(eventIdentifier) and zoom link: \(match)")
+//            return true
+//        }
         return false
     }
 }

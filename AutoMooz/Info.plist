@@ -24,12 +24,6 @@
 	<string>public.app-category.utilities</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
-	<key>LSUIElement</key>
-	<true/>
-	<key>NSCalendarsUsageDescription</key>
-	<string>Need access to check when the next video call is going to happen.</string>
-	<key>NSContactsUsageDescription</key>
-	<string>Need access to check shared calendars for the next video call</string>
 	<key>NSMainStoryboardFile</key>
 	<string>Main</string>
 	<key>NSPrincipalClass</key>

@@ -1,4 +1,4 @@
-framework module SwiftSoup {
+module SwiftSoup {
   umbrella header "SwiftSoup-umbrella.h"
 
   export *

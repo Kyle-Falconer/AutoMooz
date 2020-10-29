@@ -1,4 +1,4 @@
-framework module Preferences {
+module Preferences {
   umbrella header "Preferences-umbrella.h"
 
   export *

@@ -10,7 +10,7 @@ import SwiftSoup
 
 class ZoomEvent: Equatable {
 
-    private static let zoomLinkRegex = try! NSRegularExpression(pattern: #"zoom.us/j/(.*$)"#,
+    private static let zoomLinkRegex = try! NSRegularExpression(pattern: #"zoom.us/j/([^/"]*)"#,
                                                  options: .caseInsensitive)
     private var id: UUID
     var title: String
@@ -58,7 +58,7 @@ class ZoomEvent: Equatable {
             let link: Element = try doc.select("a").first()!
             let linkHref: String = try link.attr("href")
             return linkHref
-        } catch Exception.Error(let type, let message) {
+        } catch Exception.Error( _, let message) {
             print(message)
         } catch {
             print("error")
@@ -68,8 +68,8 @@ class ZoomEvent: Equatable {
     
     public static func parseZoomIdFromUrl(desc: String) -> String? {
         let result = desc.groups(for: zoomLinkRegex)
-        if result.count > 0 {
-            return result[0][0]
+        if result.count > 0 && result[0].count > 0 {
+            return result[0][1]
         }
         return nil
     }
